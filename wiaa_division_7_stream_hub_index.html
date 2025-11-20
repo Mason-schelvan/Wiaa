@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WIAA Division 7 Stream Hub</title>
+  <meta name="description" content="Official links and legal streams for WIAA Division 7 State Championships.">
+  <style>
+    :root{--accent:#1f6feb;--bg:#0f1724;--card:#0b1220;--muted:#9aa6b2}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0;background:linear-gradient(180deg,#071029 0%,#071227 100%);color:#e6eef6}
+    header{padding:24px 20px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;gap:12px}
+    .brand{font-weight:700;font-size:18px;color:var(--accent)}
+    .container{max-width:1000px;margin:28px auto;padding:0 18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    h1{margin:0;font-size:22px}
+    p{color:var(--muted);margin:8px 0 0}
+    .video-wrap{position:relative;padding-top:56.25%;background:#000;border-radius:8px;overflow:hidden}
+    .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    a.btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:linear-gradient(90deg,var(--accent),#00a3ff);color:#042338;font-weight:600}
+    .muted{color:var(--muted);font-size:14px}
+    .schedule{display:grid;gap:10px}
+    .game{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:rgba(255,255,255,0.01)}
+    footer{max-width:1000px;margin:28px auto 60px;padding:0 18px;color:var(--muted);font-size:13px}
+    @media(min-width:900px){.grid{grid-template-columns:2fr 1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">WIAA Div. 7 Stream Hub</div>
+    <div style="margin-left:auto" class="muted">Legal streams & official links</div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section class="card">
+        <h1>Watch the Division 7 Championship (Official)</h1>
+        <p class="muted">This page is a hub for official, legal streams — NFHS Network, WIAA, and official team streams. Replace the embed below with an official stream URL or click the partner links.</p>
+
+        <div style="margin-top:14px" class="video-wrap">
+          <!--
+            Replace the src of the iframe below with an official stream URL.
+            Examples:
+              - NFHS Network embed URL (if available from NFHS)
+              - YouTube live video embed (only if the upload is official)
+            Keep copyright and terms-of-service in mind.
+          -->
+          <iframe id="mainStream" src="about:blank" title="Live stream placeholder" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+        </div>
+
+        <div class="links">
+          <a class="btn" href="https://www.wiaawi.org/Media-Center/Watch-Online" target="_blank" rel="noopener">WIAA Watch Online</a>
+          <a class="btn" href="https://www.nfhsnetwork.com/" target="_blank" rel="noopener">NFHS Network</a>
+          <a class="btn" href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube (Official Channels)</a>
+        </div>
+
+        <div style="margin-top:12px" class="muted">Tip: If a school or local station is streaming on YouTube, use the channel's official video embed URL. Do not stream or embed unauthorized feeds.</div>
+      </section>
+
+      <aside class="card">
+        <h2 style="margin:0;font-size:16px">Schedule & Links</h2>
+        <p class="muted">Add game times and official links below. You can edit this section to include ticket links and team pages.</p>
+
+        <div class="schedule" id="scheduleList" style="margin-top:10px">
+          <!-- Example game item. Replace with real schedule. -->
+          <div class="game">
+            <div>
+              <div style="font-weight:700">Division 7 — Championship</div>
+              <div class="muted" style="font-size:13px">Date: TBD · Site: Kampen Stadium</div>
+            </div>
+            <div style="text-align:right">
+              <div><a id="watchLink" class="btn" href="#">Watch</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong class="muted">Official resources</strong>
+          <ul class="muted" style="padding-left:16px;margin:8px 0 0">
+            <li><a href="https://www.wiaawi.org" target="_blank" rel="noopener">WIAA Official Site</a></li>
+            <li><a href="https://www.nfhsnetwork.com" target="_blank" rel="noopener">NFHS Network</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:18px">
+      <h2 style="margin:0;font-size:16px">About this page</h2>
+      <p class="muted" style="margin-top:8px">This template helps you create a small legal-stream hub for the WIAA Division 7 championship. It deliberately avoids hosting or linking to unauthorized streams. If you want, I can:
+      </p>
+      <ul class="muted" style="margin-top:8px;padding-left:18px">
+        <li>Fill in the live embed URL for the official broadcast (I can search for it).</li>
+        <li>Add ticketing links, team pages, or social media embeds.</li>
+        <li>Prepare a deployment-ready package and instructions to put this on Netlify or GitHub Pages.</li>
+      </ul>
+
+      <p class="muted" style="margin-top:8px"><strong>Legal note:</strong> Do not embed or rebroadcast any stream unless you have permission from the rights holder. This page is meant for linking to official sources only.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    Created as a simple single-file site. Tell me which exact stream URL (official) you'd like embedded and I can update the page to include it.
+  </footer>
+
+  <script>
+    // Small helper: swap placeholder to a provided URL if stored in localStorage.
+    (function(){
+      const iframe=document.getElementById('mainStream');
+      const watchLink=document.getElementById('watchLink');
+      const stored=localStorage.getItem('div7_stream_url');
+      if(stored){
+        iframe.src=stored;
+        watchLink.href=stored;
+        watchLink.innerText='Watch (Live)';
+      } else {
+        // keep a friendly placeholder embed (YouTube channel search) without pointing to unauthorized content
+        iframe.src='https://www.youtube.com/embed?listType=search&list=WIAA+Division+7+State+Championship';
+        watchLink.href='https://www.wiaawi.org/Media-Center/Watch-Online';
+        watchLink.innerText='Official Watch Page';
+      }
+
+      // Simple function to let an admin set the embed URL via prompt (for local edits)
+      window.setStreamUrl=function(){
+        const url=prompt('Paste official embed URL (iframe src) here:');
+        if(url){
+          localStorage.setItem('div7_stream_url', url);
+          location.reload();
+        }
+      }
+    })()
+  </script>
+</body>
+</html>
